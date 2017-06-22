@@ -1,0 +1,11 @@
+{
+  "name": "nightlife",
+  "version": "1.0.0",
+  "description": "Find bars near you and notify others that you are going.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CMDaniels",
+  "license": "ISC"
+}

@@ -24,3 +24,12 @@ h1 {
 .places .panel p {
   text-align: left;
 }
+
+.places .panel .panel-footer button,
+.places .panel .panel-footer p {
+  display: inline;
+}
+
+.places .panel .panel-footer p {
+  padding-left: 16px;
+}

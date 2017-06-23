@@ -32,8 +32,22 @@ function search(){
               '<td>' + (rest.is_closed ? 'No' : 'Yes') + '</td>' +
             '</tr>' +
           '</table>' +
+          '<div class="panel-footer">' +
+            '<button class="btn btn-primary" id="' + rest.id + '" onclick="going(this.id)">I\'m Going</button>' +
+            '<p>0 Going</p>' +
+          '</div>' +
         '</div>');
       });
     }
   });
 }
+
+function going(id) {
+  console.log(id);
+}
+
+$("#location").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#search").click();
+    }
+});

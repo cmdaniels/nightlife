@@ -26,6 +26,7 @@ function login(doSignOut){
       var errorMessage = error.message;
       var email = error.email;
       var credential = error.credential;
+      console.log(errorCode, errorMessage, email, credential);
     });
   } else if(doSignOut !== false) {
     firebase.auth().signOut().then(function() {

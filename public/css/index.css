@@ -1,9 +1,26 @@
-h1,
 p {
+  text-align: center;
+}
+
+h1 {
+  padding: 64px 0 0 0;
   text-align: center;
 }
 
 .input-group {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.places {
+  padding-top: 16px;
+}
+
+.places .panel {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.places .panel p {
+  text-align: left;
 }

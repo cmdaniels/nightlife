@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Nightlife Coordinator</title>
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
@@ -34,12 +34,14 @@
         <h1>Nightlife Coordinator</h1>
         <p>Find bars near you and notify others that you are going.</p>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Location">
+          <input type="text" class="form-control" placeholder="Location" id="location"></input>
           <span class="input-group-btn">
-            <button class="btn btn-primary" type="button">Search</button>
+            <button class="btn btn-primary" type="button" onclick="search()">Search</button>
           </span>
         </div>
+        <div class="places"></div>
       </div>
     </main>
+    <script src="js/index.js" charset="utf-8"></script>
   </body>
 </html>

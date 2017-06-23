@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB-z35ONe6R_vmwjLqvyEbA93MFXGlBVhU",
+        authDomain: "nightlife-coordinator.firebaseapp.com",
+        databaseURL: "https://nightlife-coordinator.firebaseio.com",
+        projectId: "nightlife-coordinator",
+        storageBucket: "nightlife-coordinator.appspot.com",
+        messagingSenderId: "952578637007"
+      };
+      firebase.initializeApp(config);
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -24,7 +37,7 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Log In with Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#" onclick="login()" id="login"></a></li>
           </ul>
         </div>
       </div>
